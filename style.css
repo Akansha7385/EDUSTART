@@ -1,0 +1,414 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  background-color: #262626;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.navbar {
+  min-height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+}
+
+.nav-branding {
+  font-size: 2rem;
+}
+
+.nav-link {
+  font-size: 1.1rem;
+  transition: 0.7s ease;
+}
+
+.nav-link:hover {
+  color: dodgerblue;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #fff;
+}
+
+#search {
+  border: none;
+  padding: 8px;
+  padding-left: 12px;
+  font-size: 14px;
+  width: 480px;
+  color: #2382ff solid;
+  border-radius: 16px 0 0 16px;
+  font-weight: 500;
+}
+
+#search-btn {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  padding: 4px;
+  width: 78px;
+  justify-content: center;
+  border: 2px solid #2382ff;
+  color: rgb(255, 255, 255) !important;
+  cursor: pointer;
+  border-radius: 0 16px 16px 0;
+  background-color: #2986ff;
+}
+
+.head {
+  font-size: 3.5rem;
+}
+
+.hero {
+  height: 100vh;
+  background-image: url(https://media.istockphoto.com/id/1460853312/photo/abstract-connected-dots-and-lines-concept-of-ai-technology-motion-of-digital-data-flow.jpg?s=612x612&w=0&k=20&c=bR6oXBoagK2Yagty_At67Dx_wiYRuKJY3hM_ZHCuIxo=);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: 1600px 800px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero-text h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #fff;
+  color: #1b263b;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #1b263b;
+  color: white;
+}
+
+.about {
+  background-color: #415a7748;
+  padding: 60px 0;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about-text {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.about-text h2 {
+  margin-bottom: 20px;
+  color: #1b263b;
+}
+
+.about-text p {
+  font-size: 1.2em;
+  line-height: 1.6;
+  color: #1b263b;
+  margin-bottom: 15px;
+}
+
+.about-image img {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.about-image img:hover {
+  transform: scale(1.05);
+}
+
+.services {
+  background-color: #415a7748;
+  padding: 80px 0;
+  text-align: center;
+}
+
+.services img {
+  height: 10rem;
+  width: 14rem;
+  border-radius: 5px;
+}
+
+h2 {
+  font-size: 2.5em;
+  margin-bottom: 50px;
+  color: #1b263b;
+}
+
+.service-cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.card {
+  background-color: #415a77;
+  color: white;
+  width: 20rem;
+  border-radius: 10px;
+  padding: 40px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.199), 0 6px 20px 0 rgba(0, 0, 0, 0.185);
+  flex: 1;
+  transition: transform 0.3s ease;
+}
+
+.card h3 {
+  font-size: 1.8em;
+  margin-bottom: 40px;
+}
+
+.card p {
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  background-color: #415a77e7;
+}
+
+footer {
+  background-color: #0d1b2a;
+  color: white;
+  padding: 60px 0;
+}
+
+.footerContainer {
+  flex-direction: row;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: row;
+  /* Row layout for desktop */
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #555;
+}
+
+.footer-about,
+.footer-links,
+.footer-contact {
+  flex: 1;
+  padding: 0 20px;
+}
+
+.footer-about h3,
+.footer-links h3,
+.footer-contact h3 {
+  font-size: 1.5em;
+  margin-bottom: 15px;
+  color: #f39c12;
+}
+
+.footer-about p,
+.footer-contact p {
+  font-size: 1em;
+  line-height: 1.6;
+}
+
+.footer-links ul {
+  list-style-type: none;
+}
+
+.footer-links ul li {
+  margin-bottom: 10px;
+}
+
+.footer-links ul li a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-links ul li a:hover {
+  color: #f39c12;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 20px;
+  color: #ccc;
+}
+
+.footer-bottom p {
+  margin: 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    background-color: #262626;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+  }
+
+  .nav-item {
+    margin: 16px 0;
+  }
+
+  .nav-menu.active {
+    left: 0;
+    z-index: 10000;
+  }
+
+  .fade {
+    opacity: 1 !important;
+    transition: opacity 0.5s ease-in-out;
+  }
+
+  .container {
+    flex-direction: column;
+  }
+
+  .service-cards {
+    flex-direction: column;
+  }
+
+  .about-text {
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+
+
+
+  .footer-about,
+  .footer-links,
+  .footer-contact {
+    padding: 0;
+    text-align: center;
+  }
+
+  .footer-about,
+  .footer-links,
+  .footer-contact {
+    margin-bottom: 20px;
+  }
+
+  @media (max-width: 480px) {
+    .hero-text h1 {
+      font-size: 2.2em;
+    }
+
+    .hero-text p {
+      font-size: 1em;
+    }
+
+    .btn {
+      padding: 8px 16px;
+    }
+
+    #search {
+      display: none;
+    }
+
+
+    #search-btn {
+      display: none;
+    }
+
+
+    .about-text h2,
+    .services h2 {
+      font-size: 2em;
+    }
+
+    .services img {
+      height: 12rem;
+      width: 17rem;
+      border-radius: 5px;
+    }
+
+    .card {
+      padding: 30px;
+      width: 20rem;
+    }
+
+    .footer-content {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}
